@@ -173,12 +173,12 @@ nav a:hover{
             <form>
 
                
-                <label>Username: <input type="text" name="username" class="input-box"  placeholder="Username here"></label><br>
+                <label>Username: <input type="text" name="username" class="input-box"  placeholder="Username here" ng-model="username" ng-required="true"></label><br>
                 <br>
-                <label>Password: <input type="password" name="userpass" class="input-box"  placeholder="Password here"></label><br>
+                <label>Password: <input type="password" name="userpass" class="input-box"  placeholder="Password here" ng-model="userpass" ng-required="true" ></label><br>
                 <br>
                 <br>
-                <button type="button" class="reg_btn">Login </button>
+                <button type="submit" class="reg_btn">Login </button>
                 <hr>
                 <p> haven't registered? <a routerLink="/register" routerLinkActive=
                     "">Register</a></p>

@@ -3,6 +3,7 @@
 <head>
     <title>Register Form</title>
    
+
      <!-- Style -->
 
 <style>
@@ -172,11 +173,11 @@ nav a:hover{
 
             <form>
 
-                <label>First Name: <input type="text" name="fname" class="input-box" placeholder="First Name here"></label><br>
+                <label>First Name: <input type="text" name="fname" class="input-box" placeholder="First Name here" required name="fname" ng-model="fname" ng-required="true"></label><br>
                 <br>
-                <label>Last Name: <input type="text" name="lname" class="input-box" placeholder="Last Name here"></label><br>
+                <label>Last Name: <input type="text" name="lname" class="input-box" placeholder="Last Name here" required name="lname" ng-model="lname" ng-required="true"></label><br>
                 <br>
-                <label>Student Number: <input type="text" name="studnum" class="input-box"  placeholder="Student Number here"></label><br>
+                <label>Student Number: <input type="text" name="studnum" class="input-box"  placeholder="Student Number here" required name="studnum" ng-model="studnum" ng-required="true"></label><br>
                 <br>
         
                 <label for="subject">Subject you need help with:</label>
@@ -190,22 +191,26 @@ nav a:hover{
                  </select>
                  <br>
                  <br>
-                <label>Username: <input type="text" name="username" class="input-box"  placeholder="Username here"></label><br>
+                <label>Username: <input type="text" name="username" class="input-box"  placeholder="Username here" ng-model="username" ng-required="true"></label><br>
                 <br>
-                <label>Password: <input type="password" name="userpass" class="input-box"  placeholder="Password here"></label><br>
+                <label>Password: <input type="password" name="userpass" class="input-box"  placeholder="Password here" ng-model="userpass" ng-required="true"></label><br>
                 <br>
                 <br>
-                <button type="button" class="reg_btn">Send Registration</button>
+                <button type="submit" class="reg_btn">Send Registration</button>
                 <hr>
                 <p> already registered? <a routerLink="/login" routerLinkActive=
                     "">Login</a></p>
             </form>
+            
+
+            
 
             <hr>
            <p> &copy; all rights reserved</p>
 
 
         </div>
+        
 </body>
 </html>
 
