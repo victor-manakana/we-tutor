@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+   
+     <!-- Style -->
+
+<style>
+    /* You can add global styles to this file, and also import other style files */
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(assets\pictures\logo2.png);
+    background-size: cover;
+    background-position: center;
+}
+.regform
+{
+
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background: #fff;
+    padding: 30px;
+    margin: 8% auto 0;
+    text-align: center;
+}
+
+.loginform
+{
+
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background: #fff;
+    padding: 30px;
+    margin: 8% auto 0;
+    text-align: center;
+}
+
+.homeform
+{
+
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background: #fff;
+    padding: 30px;
+    margin: 8% auto 0;
+    text-align: center;
+}
+
+.regform h1{
+
+    color: #44a6ec;
+    margin-bottom:30px;
+}
+
+.homeform h1{
+
+    color: #44a6ec;
+    margin-bottom:30px;
+}
+
+.loginform h1{
+
+    color: #44a6ec;
+    margin-bottom:30px;
+}
+
+.input-box
+{
+   border-radius: 20px; 
+   padding:10px;
+   margin:10px 0;
+   width:50%;
+   border:1px solid #999;
+   outline:none;
+}
+
+button{
+
+    color: white;
+    width:50%;
+    padding:10px;
+    border-radius:20px ;
+    font-size: 15px;
+    margin: 10px 0;
+    border:none;
+    outline:none;
+    cursor: pointer;
+}
+
+.reg_btn
+{
+    background-color:#44a6ec ;
+}
+
+img
+{
+    width:150px ;
+}
+
+.container
+{
+    width:50%;
+    margin:0 auto;
+}
+header
+{
+    background: rgb(195, 240, 240);
+}
+nav ul{
+    padding:0;
+    list-style: none;
+}
+
+nav li{
+display:inline-block;
+
+;
+
+}
+
+nav a
+{
+    color:#44a6ec;
+    text-decoration: none;
+    text-transform: uppercase; 
+}
+nav a:hover{
+
+    color:yellow;
+    transition: .4s;
+
+}
+
+
+</style>   
+
+
+   
+</head>
+<body>
+
+    <div class="loginform">
+
+            <img src="assets\pictures\img1.png">
+            <div class="container">
+                <nav>
+                    <ul>
+                        
+                        &nbsp;
+                        &nbsp;
+                        <li><a routerLink="/home" routerLinkActive=
+                            "">Home</a></li>
+                    </ul>
+        
+        
+                </nav>
+        
+            </div>
+            <hr>
+
+           
+
+
+
+            
+            <h1>Login here</h1>
+            
+            
+
+            <form>
+
+               
+                <label>Username: <input type="text" name="username" class="input-box"  placeholder="Username here"></label><br>
+                <br>
+                <label>Password: <input type="password" name="userpass" class="input-box"  placeholder="Password here"></label><br>
+                <br>
+                <br>
+                <button type="button" class="reg_btn">Login </button>
+                <hr>
+                <p> haven't registered? <a routerLink="/register" routerLinkActive=
+                    "">Register</a></p>
+            </form>
+
+            <hr>
+           <p> &copy; all rights reserved</p>
+
+
+        </div>
+</body>
+</html>
+
